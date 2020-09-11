@@ -7,10 +7,16 @@ import crazyTarot from '../../assets/images/crazyTarot.png';
 const Result = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.result}>
-        <Animatable.Image style={styles.tarotCard} source={crazyTarot} />
-        <Animatable.Text style={styles.title}>O Louco</Animatable.Text>
-        <Animatable.Text style={styles.subtitle}>
+      <Animatable.View
+        useNativeDriver
+        animation="slideInLeft"
+        iterationCount={1}
+        duration={500}
+        style={styles.result}
+      >
+        <Image style={styles.tarotCard} source={crazyTarot} />
+        <Text style={styles.title}>O Louco</Text>
+        <Text style={styles.subtitle}>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste
           adipisci iure autem, quos repellendus, tempore ex deserunt, in
           repudiandae voluptatum facilis ipsam provident ut? Non libero
@@ -18,8 +24,8 @@ const Result = () => {
           adipisicing elit. Distinctio ab illum dolore adipisci quis, dolores
           necessitatibus magni porro! Voluptatibus non perferendis laudantium
           dolores aliquam nemo quae accusamus nisi tempore sapiente!
-        </Animatable.Text>
-      </View>
+        </Text>
+      </Animatable.View>
     </View>
   );
 };
