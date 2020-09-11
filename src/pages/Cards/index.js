@@ -2,14 +2,21 @@ import React, { useState } from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import * as Animatable from 'react-native-animatable';
-
+import { useNavigation } from '@react-navigation/native';
 // import { Container } from './styles';
 import card from '../../assets/images/cards2.png';
 
 const AnimatedCards = Animatable.createAnimatableComponent(RectButton);
 
 const Cards = () => {
-  const [weight, setWeight] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+  const [weight] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+  const nextPage = useNavigation();
+
+  function handleNavigationResult(w) {
+    const valueWeight = Math.floor(Math.random() * (22 - w + 1)) + w;
+
+    nextPage.navigate('Result', w);
+  }
 
   return (
     <View style={styles.conteiner}>
@@ -19,6 +26,7 @@ const Cards = () => {
       <Animatable.View style={styles.conteinerCards}>
         {weight.map((w) => (
           <AnimatedCards
+            onPress={() => handleNavigationResult(w)}
             key={w}
             useNativeDriver
             animation="slideInLeft"

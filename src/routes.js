@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Main from './pages/Main';
 import Tarot from './pages/Tarot';
 import Cards from './pages/Cards';
+import Result from './pages/Result';
 
 const AppStack = createStackNavigator();
 
@@ -22,6 +23,7 @@ const Routes = () => {
         <AppStack.Screen name="Main" component={Main} />
         <AppStack.Screen name="Tarot" component={Tarot} />
         <AppStack.Screen name="Cards" component={Cards} />
+        <AppStack.Screen name="Result" component={Result} />
       </AppStack.Navigator>
     </NavigationContainer>
   );

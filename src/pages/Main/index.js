@@ -4,6 +4,7 @@ import { RectButton } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 
 import magic from '../../assets/images/magic.png';
+// import hat from '../../assets/images/witch.png';
 
 const Main = () => {
   const nextPage = useNavigation();
