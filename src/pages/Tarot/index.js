@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
+import * as Animatable from 'react-native-animatable';
 
 // import { Container } from './styles';
 
@@ -15,9 +16,15 @@ const Tarot = () => {
     <View style={styles.container}>
       <View style={styles.containerTitle}>
         <Text style={styles.title}>Vá quando estiver pronta</Text>
-        <View style={styles.borderSubtitle}>
-          <Text style={styles.subtitle}>Relaxe!</Text>
-        </View>
+        <Animatable.View
+          style={styles.borderSubtitle}
+          useNativeDriver
+          animation="pulse"
+          iterationCount={Infinity}
+          duration="2000"
+        >
+          <Animatable.Text style={styles.subtitle}>Relaxe!</Animatable.Text>
+        </Animatable.View>
       </View>
       <View style={styles.navigation}>
         <RectButton style={styles.button} onPress={handleNavigationCards}>
@@ -43,7 +50,7 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     textAlign: 'center',
     fontSize: 48,
-    fontFamily: 'PermanentMarker-Regular',
+    fontFamily: 'Ubuntu-Bold',
   },
   borderSubtitle: {
     justifyContent: 'center',
