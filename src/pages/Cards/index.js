@@ -15,7 +15,7 @@ const Cards = () => {
   function handleNavigationResult(w) {
     const valueWeight = Math.floor(Math.random() * (22 - w + 1)) + w;
 
-    nextPage.navigate('Result', w);
+    nextPage.navigate('Result', valueWeight);
   }
 
   return (
