@@ -1,41 +1,34 @@
 import React, { useState } from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
+import * as Animatable from 'react-native-animatable';
+
 // import { Container } from './styles';
 import card from '../../assets/images/cards2.png';
 
+const AnimatedCards = Animatable.createAnimatableComponent(RectButton);
+
 const Cards = () => {
+  const [weight, setWeight] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]);
+
   return (
     <View style={styles.conteiner}>
       <View>
         <Text style={styles.title}>Escolha uma carta</Text>
       </View>
-      <View style={styles.conteinerCards}>
-        <RectButton>
-          <Image style={styles.cards} source={card} />
-        </RectButton>
-        <RectButton>
-          <Image style={styles.cards} source={card} />
-        </RectButton>
-        <RectButton>
-          <Image style={styles.cards} source={card} />
-        </RectButton>
-        <RectButton>
-          <Image style={styles.cards} source={card} />
-        </RectButton>
-        <RectButton>
-          <Image style={styles.cards} source={card} />
-        </RectButton>
-        <RectButton>
-          <Image style={styles.cards} source={card} />
-        </RectButton>
-        <RectButton>
-          <Image style={styles.cards} source={card} />
-        </RectButton>
-        <RectButton>
-          <Image style={styles.cards} source={card} />
-        </RectButton>
-      </View>
+      <Animatable.View style={styles.conteinerCards}>
+        {weight.map((w) => (
+          <AnimatedCards
+            key={w}
+            useNativeDriver
+            animation="slideInLeft"
+            iterationCount={1}
+            duration={w * 200}
+          >
+            <Image style={styles.cards} source={card} />
+          </AnimatedCards>
+        ))}
+      </Animatable.View>
     </View>
   );
 };
