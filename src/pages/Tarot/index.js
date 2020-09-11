@@ -1,8 +1,10 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Image } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import { useNavigation } from '@react-navigation/native';
 import * as Animatable from 'react-native-animatable';
+
+import hatSmall from '../../assets/images/hatSmall.png';
 
 // import { Container } from './styles';
 
@@ -15,7 +17,17 @@ const Tarot = () => {
   return (
     <View style={styles.container}>
       <View style={styles.containerTitle}>
-        <Text style={styles.title}>Vá quando estiver pronta</Text>
+        <View style={styles.containerImage}>
+          <Animatable.Image
+            source={hatSmall}
+            useNativeDriver
+            animation="slideInDown"
+            iterationCount={1}
+            duration={1000}
+          />
+
+          <Text style={styles.title}>Vá quando estiver pronta</Text>
+        </View>
         <Animatable.View
           style={styles.borderSubtitle}
           useNativeDriver
@@ -44,6 +56,9 @@ const styles = StyleSheet.create({
   },
   containerTitle: {
     marginHorizontal: 60,
+  },
+  containerImage: {
+    alignItems: 'center',
   },
   subtitle: {
     color: '#eee',

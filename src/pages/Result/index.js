@@ -1,12 +1,21 @@
 import React from 'react';
 import { View, Image, Text, StyleSheet } from 'react-native';
 import * as Animatable from 'react-native-animatable';
+import hatSmall from '../../assets/images/hatSmall.png';
 
 import crazyTarot from '../../assets/images/crazyTarot.png';
 
 const Result = () => {
   return (
     <View style={styles.container}>
+      <Animatable.Image
+        source={hatSmall}
+        useNativeDriver
+        animation="slideInDown"
+        iterationCount={1}
+        duration={1000}
+      />
+
       <Animatable.View
         useNativeDriver
         animation="slideInLeft"
@@ -35,6 +44,7 @@ const styles = StyleSheet.create({
     padding: 30,
     flex: 1,
     justifyContent: 'center',
+    alignItems: 'center',
   },
   result: {
     alignItems: 'center',

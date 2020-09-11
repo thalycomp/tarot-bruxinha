@@ -3,6 +3,8 @@ import { View, Text, Image, StyleSheet } from 'react-native';
 import { RectButton } from 'react-native-gesture-handler';
 import * as Animatable from 'react-native-animatable';
 import { useNavigation } from '@react-navigation/native';
+import hatSmall from '../../assets/images/hatSmall.png';
+
 // import { Container } from './styles';
 import card from '../../assets/images/cards2.png';
 
@@ -20,7 +22,15 @@ const Cards = () => {
 
   return (
     <View style={styles.conteiner}>
-      <View>
+      <View style={styles.conteinerImage}>
+        <Animatable.Image
+          source={hatSmall}
+          useNativeDriver
+          animation="slideInDown"
+          iterationCount={1}
+          duration={1000}
+        />
+
         <Text style={styles.title}>Escolha uma carta</Text>
       </View>
       <Animatable.View style={styles.conteinerCards}>
@@ -48,8 +58,12 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     marginVertical: 60,
   },
-  title: {
+  conteinerImage: {
     marginVertical: 30,
+    alignItems: 'center',
+  },
+  title: {
+    marginTop: 10,
     color: '#eee',
     fontFamily: 'Ubuntu-Bold',
     fontSize: 25,
