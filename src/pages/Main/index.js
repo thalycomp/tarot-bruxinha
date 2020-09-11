@@ -61,7 +61,7 @@ const styles = StyleSheet.create({
     elevation: 2,
   },
   textButton: {
-    color: '#FFF',
+    color: '#eee',
     fontFamily: 'Ubuntu-Bold',
     fontSize: 20,
   },
