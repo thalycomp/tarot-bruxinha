@@ -21,7 +21,7 @@ const Tarot = () => {
           useNativeDriver
           animation="pulse"
           iterationCount={Infinity}
-          duration="2000"
+          duration={2000}
         >
           <Animatable.Text style={styles.subtitle}>Relaxe!</Animatable.Text>
         </Animatable.View>
@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
   button: {
     height: 60,
     flex: 1,
-    backgroundColor: '#9BC4D4',
+    backgroundColor: '#BD80E1',
     borderRadius: 8,
     overflow: 'hidden',
     alignItems: 'center',
