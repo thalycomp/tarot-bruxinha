@@ -1,0 +1,157 @@
+{
+  "cards": [
+    {
+      "id": 0,
+      "name": "O Louco",
+      "image": "https://i.ibb.co/JvjTmyn/crazy-Tarot-1louco.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+    },
+    {
+      "id": 1,
+      "name": "O Mago",
+      "image": "https://i.ibb.co/3dtb5vz/image-3mago.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+    },
+    {
+      "id": 2,
+      "name": "A Papisa",
+      "image": "https://i.ibb.co/8BYHmcw/image-4papisa.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 3,
+      "name": "A Imperatriz",
+      "image": "https://i.ibb.co/y465tVh/image-5imperatriz.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 4,
+      "name": "O Imperador",
+      "image": "https://i.ibb.co/5Y0dq8y/image-6imperador.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 5,
+      "name": "O Papa",
+      "image": "https://i.ibb.co/C163gMt/image-7o-papa.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 6,
+      "name": "Os Enamorados",
+      "image": "https://i.ibb.co/G2BYbHC/image-8os-enamorados.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 7,
+      "name": "O Carro",
+      "image": "https://i.ibb.co/fqLqLnw/image-9o-carro.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 8,
+      "name": "A Justiça",
+      "image": "https://i.ibb.co/Dkng9k0/image-10justi-a.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 9,
+      "name": "O Eremita",
+      "image": "https://i.ibb.co/zNNL4Xb/image-11eremita.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 10,
+      "name": "Roda da Fortuna",
+      "image": "https://i.ibb.co/QfkLgnF/image-12roda-da-fortura.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 11,
+      "name": "A Força",
+      "image": "https://i.ibb.co/cTybBmw/image-13a-for-a.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 12,
+      "name": "O Enforcado",
+      "image": "https://i.ibb.co/L0JnMct/image-14o-enforcado.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 13,
+      "name": "Morte",
+      "image": "https://i.ibb.co/wN6rxc6/image-15morte.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 14,
+      "name": "A Temperança",
+      "image": "https://i.ibb.co/C8Mx9vH/image-16temperan-a.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 15,
+      "name": "O Diabo",
+      "image": "https://i.ibb.co/2PxLG4t/image-17o-diabo.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 16,
+      "name": "A Torre",
+      "image": "https://i.ibb.co/QkgZvtN/image-18o-torre.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 17,
+      "name": "A Estrela",
+      "image": "https://i.ibb.co/ky1ryYD/image-19estrela.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 18,
+      "name": "A Lua",
+      "image": "https://i.ibb.co/cwcC3rN/image-20a-lua.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 19,
+      "name": "O Sol",
+      "image": "https://i.ibb.co/T832JFf/image-21o-sol.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 20,
+      "name": "O Julgamento",
+      "image": "https://i.ibb.co/F0sh7Yx/image-22o-julgamento.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    },
+    {
+      "id": 21,
+      "name": "O Mundo",
+      "image": "https://i.ibb.co/J777nnM/image-23o-mundo.png",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea isteLorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste"
+
+    }
+    
+  ]
+}

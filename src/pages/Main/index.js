@@ -16,6 +16,9 @@ const Main = () => {
     <View style={styles.container}>
       <View style={styles.main}>
         <Image source={hat} />
+        {/**
+         * Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+         */}
         <Text style={styles.title}> Tarot Bruxinha</Text>
       </View>
       <View style={styles.navigation}>
