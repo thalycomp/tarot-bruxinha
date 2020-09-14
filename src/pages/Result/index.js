@@ -1,44 +1,63 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { View, Image, Text, StyleSheet } from 'react-native';
 import * as Animatable from 'react-native-animatable';
 import hatSmall from '../../assets/images/hatSmall.png';
+import Api from '../../services/api';
 
-import crazyTarot from '../../assets/images/crazyTarot.png';
+// import crazyTarot from '../../assets/images/crazyTarot.png';
 
-const Result = () => {
+const Result = (props) => {
+  const [cards, setCards] = useState([]);
+
+  useEffect(() => {
+    Api.get(`cards/${props.route.params}`).then((response) => {
+      setCards(response.data);
+    });
+  }, []);
+
   return (
-    <View style={styles.container}>
-      <Animatable.Image
-        source={hatSmall}
-        useNativeDriver
-        animation="slideInDown"
-        iterationCount={1}
-        duration={1000}
-      />
-      {/**
-       * Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-       */}
-
-      <Animatable.View
-        useNativeDriver
-        animation="slideInLeft"
-        iterationCount={1}
-        duration={500}
-        style={styles.result}
-      >
-        <Image style={styles.tarotCard} source={crazyTarot} />
-        <Text style={styles.title}>O Louco</Text>
-        <Text style={styles.subtitle}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea iste
-          adipisci iure autem, quos repellendus, tempore ex deserunt, in
-          repudiandae voluptatum facilis ipsam provident ut? Non libero
-          blanditiis magnam ex! Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Distinctio ab illum dolore adipisci quis, dolores
-          necessitatibus magni porro! Voluptatibus non perferendis laudantium
-          dolores aliquam nemo quae accusamus nisi tempore sapiente!
-        </Text>
-      </Animatable.View>
-    </View>
+    <>
+      {cards.length === 0 ? (
+        <View style={styles.container}>
+          <Animatable.Image
+            source={hatSmall}
+            useNativeDriver
+            animation="slideInDown"
+            iterationCount={1}
+            duration={1000}
+          />
+          {/**
+           * Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+           */}
+        </View>
+      ) : (
+        <>
+          <View style={styles.container}>
+            <Animatable.Image
+              source={hatSmall}
+              useNativeDriver
+              animation="slideInDown"
+              iterationCount={1}
+              duration={1000}
+            />
+            {/**
+             * Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+             */}
+            <Animatable.View
+              useNativeDriver
+              animation="slideInLeft"
+              iterationCount={1}
+              duration={500}
+              style={styles.result}
+            >
+              <Image style={styles.tarotCard} source={{ uri: cards.image }} />
+              <Text style={styles.title}>{cards.name}</Text>
+              <Text style={styles.subtitle}>{cards.description}</Text>
+            </Animatable.View>
+          </View>
+        </>
+      )}
+    </>
   );
 };
 
