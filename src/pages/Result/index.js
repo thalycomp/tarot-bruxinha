@@ -73,6 +73,9 @@ const styles = StyleSheet.create({
   },
   tarotCard: {
     marginVertical: 20,
+    marginBottom: 20,
+    height: 192,
+    width: 100,
   },
   title: {
     borderRadius: 6,
