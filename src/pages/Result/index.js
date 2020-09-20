@@ -1,13 +1,22 @@
 import React, { useEffect, useState } from 'react';
-import { View, Image, Text, StyleSheet } from 'react-native';
+import { View, Image, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import * as Animatable from 'react-native-animatable';
+import Icon from 'react-native-vector-icons/FontAwesome';
+import { useNavigation } from '@react-navigation/native';
 import hatSmall from '../../assets/images/hatSmall.png';
+
 import Api from '../../services/api';
 
-// import crazyTarot from '../../assets/images/crazyTarot.png';
+const myIcon = <Icon name="arrow-left" size={25} color="#fff" />;
 
 const Result = (props) => {
+  const home = useNavigation();
+
   const [cards, setCards] = useState([]);
+
+  function navegationHome() {
+    home.navigate('Main');
+  }
 
   useEffect(() => {
     Api.get(`cards/${props.route.params}`).then((response) => {
@@ -53,6 +62,12 @@ const Result = (props) => {
               <Image style={styles.tarotCard} source={{ uri: cards.image }} />
               <Text style={styles.title}>{cards.name}</Text>
               <Text style={styles.subtitle}>{cards.description}</Text>
+              <TouchableOpacity
+                style={styles.back}
+                onPress={() => navegationHome()}
+              >
+                {myIcon}
+              </TouchableOpacity>
             </Animatable.View>
           </View>
         </>
@@ -89,6 +104,9 @@ const styles = StyleSheet.create({
     color: '#eee',
     textAlign: 'justify',
     fontSize: 18,
+  },
+  back: {
+    marginTop: 20,
   },
 });
 
