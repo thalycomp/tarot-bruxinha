@@ -41,6 +41,12 @@ const Result = (props) => {
         </View>
       ) : (
         <>
+          <TouchableOpacity
+            style={styles.back}
+            onPress={() => navegationHome()}
+          >
+            {myIcon}
+          </TouchableOpacity>
           <View style={styles.container}>
             <Animatable.Image
               source={hatSmall}
@@ -62,12 +68,6 @@ const Result = (props) => {
               <Image style={styles.tarotCard} source={{ uri: cards.image }} />
               <Text style={styles.title}>{cards.name}</Text>
               <Text style={styles.subtitle}>{cards.description}</Text>
-              <TouchableOpacity
-                style={styles.back}
-                onPress={() => navegationHome()}
-              >
-                {myIcon}
-              </TouchableOpacity>
             </Animatable.View>
           </View>
         </>
@@ -78,7 +78,8 @@ const Result = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 30,
+    paddingLeft: 30,
+    paddingRight: 30,
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
@@ -106,7 +107,8 @@ const styles = StyleSheet.create({
     fontSize: 18,
   },
   back: {
-    marginTop: 20,
+    paddingLeft: 30,
+    paddingTop: 20,
   },
 });
 
