@@ -28,7 +28,7 @@ Tarot Bruxinha
 
 [//]: # (Add your gifs/images here:)
 <div align="center">
-  <img src="https://i.ibb.co/G0Y3zsy/lescreenrecorder-2020-09-20-19-32-29.gif" alt="demo" height="425">
+  <img src="https://i.ibb.co/1fh1t1H/simplescreenrecorder-2020-09-20-1.gif" alt="demo" height="425">
 </div>
 
 <hr />
