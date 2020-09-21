@@ -8,7 +8,7 @@
 Tarot Bruxinha
 </h1>
 
-<p align="center">Tarot bruxinha é um aplicativo que simula um jogo de tarot com os arcanos maiores, de 22 cartas. O intuito principal desse projeto foi desenvolver uma aplicação simples (minha primeira em React Native), mas que fosse possível explorar bastante as animações em RN. 
+<p align="center">Tarot bruxinha é um aplicativo que simula um jogo de tarot com os arcanos maiores, de 22 cartas. O intuito principal desse projeto foi desenvolver uma aplicação simples, mas que fosse possível explorar bastante as animações em RN. 
 </p>
 
 <p align="center"><em>
